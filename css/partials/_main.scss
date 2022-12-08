@@ -1,0 +1,70 @@
+.servicio__img {
+    width: 2.8rem;
+}
+
+.entrega__img {
+    width: 4.2rem;
+}
+
+#logo_gato {
+    width: 2.5rem;
+}
+
+#logo_perro {
+    width: 2.5rem;
+}
+
+.card-size {
+    width: 290px;
+}
+
+.producto-size {
+    width: 250px;
+    height: auto;
+}
+
+.producto-size:hover {
+    border: 1px solid #c5bfbf;
+}
+
+.producto-cantidad {
+    width: 2.5rem;
+}
+
+.img-producto {
+    width: 12rem;
+}
+
+.btn-carrito:focus {
+    color: $primary-color;
+    border: 1px solid $primary-color
+}
+
+.btn-carrito:hover {
+    color: $primary-color;
+    border: 1px solid $primary-color
+}
+
+.btn-trash:hover {
+    border: 1px solid $secondary-color
+}
+
+.btn-trash:focus {
+    border: 1px solid $secondary-color
+}
+
+.modal-body {
+    overflow: hidden;
+    max-height: 600px;
+    height: auto;
+}
+
+.modal-body:hover {
+    overflow-y: auto;
+}
+
+.fade {
+    opacity: 1;
+    -webkit-transaction: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+}

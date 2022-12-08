@@ -1,0 +1,5 @@
+.btn-violet {
+    @extend %botonBase;
+    @include botones($primary-color);
+    color: map-get($estilos, colorSecundario);
+}

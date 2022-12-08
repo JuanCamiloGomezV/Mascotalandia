@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/logo.png">
+    <!-- CSS only -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container mw-100 bg-img">
+        <div class="row sticky-top">
+            <div class="container-fluid mx-0 px-0 mb-0">
+                <header class="navbar navbar-light bg-violet">
+                    <div class="container-fluid">
+                        <div class="col-lg-1 col-2 d-flex justify-content-center">
+                            <a class="navbar-brand" href="../index.html">
+                                <img src="../img/logo.png" alt="" id="logo_mascotalandia">
+                            </a>
+                        </div>
+                        <div class="col-lg-9 col-6">
+                            <div class="group">
+                                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                                <input placeholder="Buscar" type="search" class="input">
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-2 d-flex justify-content-center">
+                            <button class="btn btn-carrito boton_header p-2 d-flex justify-content-center align-items-center" id="btn-carrito" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="logo_header" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                                <p class="mx-0 mb-0 mt-1 cantidad_carrito" id="cantidad_carrito"></p>
+                            </button>
+                        </div>
+                        <div class="col-lg-1 col-2 d-flex justify-content-center">
+                            <button class="btn btn-carrito boton_header p-2" id="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="logo_header" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </header>
+            </div>
+            <nav class="navbar navbar-light p-0 d-flex nav-pc bg-white w-100 border-bottom">
+                <div class="container-fluid w-100 h-100 row">
+                    <ul class="p-0 m-0 d-flex justify-content-around w-100 h-100 align-items-center w-100">
+                        <li class="nav-item d-flex text-center no-style align-items-center w-100 justify-content-center h-100 li-item">
+                            <a href="../index.html" class="no-style nav-link">
+                                 HOME
+                            </a>
+                        </li>
+                        <div class="submenu w-100 h-75 d-flex flex-row bg-grey border border-dark rounded align-items-center justify-content-around">
+                            <li class="nav-item d-flex flex-row no-style align-items-center">
+                                <a href="../pages/perros.html" class="no-style nav-link">
+                                    <img src="../img/icono perro.png" alt="" class="nav-logo"> PERROS
+                                </a>
+                            </li>
+                            <li class="nav-item d-flex flex-row no-style align-items-center bg-">
+                                <a href="../pages/gatos.html" class="no-style nav-link">
+                                    <img src="../img/gato icono.png" alt="" class="nav-logo"> GATOS
+                                </a>
+                            </li>
+                        </div>
+                        <li class="nav-item d-flex text-center no-style align-items-center w-100 justify-content-center h-100 li-item">
+                            <a href="../pages/alimentos.html" class="no-style nav-link">
+                                 ALIMENTOS
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex text-center no-style align-items-center w-100 justify-content-center h-100 li-item">
+                            <a href="../pages/contacto.html" class="no-style nav-link">
+                                 CONTACTO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light p-0 d-flex nav-mobile mb-0">
+                <div class="container-fluid bg-light">
+                    <a class="navbar-brand" href="../index.html">Mascotalandia</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item d-flex justify-content-center">
+                                <a class="nav-link no-style" href="../index.html"><i class="fa-solid fa-house text-black me-1"></i>HOME</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-center">
+                                <a class="nav-link no-style" href="../pages/perros.html"><i class="fa-solid fa-dog text-black me-1"></i>PERROS</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-center">
+                                <a class="nav-link no-style" href="../pages/gatos.html"><i class="fa-solid fa-cat text-black me-1"></i>GATOS</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-center">
+                                <a class="nav-link no-style" href="../pages/alimentos.html"><i class="fa-solid fa-bowl-food text-black me-1"></i>ALIMENTOS</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-center">
+                                <a class="nav-link no-style" href="../pages/contacto.html"><i class="fa-solid fa-address-book text-black me-1"></i>CONTACTO</a>
+                            </li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-fluid container-fluid m-0 p-0 w-100">
+            <main class="navbar navbar-light m-0 w-100">
+                <div class="d-flex justify-content-center m-0 p-0 w-100">
+                    <div class="bg-grey border border-dark m-2 card-size rounded p-2 my-4">
+                        <form>
+                            <div>
+                                <h1 class="fs-3 fw-bold text-center">Contacto</h1>
+                            </div>
+                            <div class="mb-3 m-2">
+                                <label for="exampleInputEmail1" class="form-label m-0">Nombre:</label>
+                                <input type="text" class="form-control border border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 m-2">
+                                <label for="exampleInputEmail1" class="form-label m-0">Correo:</label>
+                                <input type="email" class="form-control border border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 m-2">
+                                <label for="exampleInputEmail1" class="form-label m-0">Celular:</label>
+                                <input type="number" class="form-control border border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 m-2">
+                                <label for="exampleInputEmail1" class="form-label m-0">Comentarios:</label>
+                                <div class="form-floating">
+                                    <textarea class="form-control border-dark" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                    <label for="floatingTextarea">Escribe tu opinion</label>
+                                </div>
+                            </div>
+                            <div class="mb-3 m-2">
+                                <div class="form-check d-flex justify-content-center m-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label ms-1" for="flexCheckDefault">
+                                        He leído y acepto los términos y condiciones de uso
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3 m-2">
+                                <div class="row d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary btn-violet border border-white text-white bg-violet w-auto me-1">Enviar</button>
+                                    <button type="reset" class="btn btn-primary btn-violet border border-white text-white bg-violet w-auto ms-1">Limpiar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="row bg-violet text-center text-white">
+            <div class="container p-4 pb-0">
+                <section class="mb-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+                </section>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright:
+                <a class="text-white" href="../index.html">Mascotalandia</a>
+            </div>
+        </footer>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center fw-bold" id="exampleModalLabel">Productos en tu carrito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="contenedor-carrito">
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-start w-100 align-items-center h-100">
+                            <h5 class="fw-bold text-center" id="total-carrito"></h5>
+                            <div class="d-flex justify-content-end w-100">
+                                <button type="button" class="btn btn-secondary mx-1" data-bs-dismiss="modal">Seguir Comprando</button>
+                                <button type="button" class="btn btn-violet text-white mx-1">Finalizar comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/agregarContactoHTML.js" type="module"></script>
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5011561d74.js" crossorigin="anonymous"></script>
+
+</html>
