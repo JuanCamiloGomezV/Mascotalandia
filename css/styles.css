@@ -1,5 +1,5 @@
 .bg-violet {
-  background-color: rgb(121, 26, 121);
+  background-color: #791a79;
 }
 
 .bg-grey {
@@ -7,7 +7,7 @@
 }
 
 .text-violet {
-  color: rgb(121, 26, 121);
+  color: #791a79;
 }
 
 .text-white {
@@ -64,7 +64,7 @@ svg {
   }
   .li-item:hover {
     background-color: rgb(235, 227, 227);
-    border-bottom: 2px solid rgb(121, 26, 121);
+    border-bottom: 2px solid #791a79;
   }
   .modal {
     height: 500px;
@@ -192,13 +192,13 @@ header .icon {
 }
 
 .btn-carrito:focus {
-  color: rgb(121, 26, 121);
-  border: 1px solid rgb(121, 26, 121);
+  color: #791a79;
+  border: 1px solid #791a79;
 }
 
 .btn-carrito:hover {
-  color: rgb(121, 26, 121);
-  border: 1px solid rgb(121, 26, 121);
+  color: #791a79;
+  border: 1px solid #791a79;
 }
 
 .btn-trash:hover {
@@ -225,11 +225,15 @@ header .icon {
   transition: opacity 0.5s linear;
 }
 
+.wave {
+  height: 100px;
+}
+
 .btn-violet:hover {
   background-color: rgb(95, 9, 95);
 }
 
 .btn-violet {
-  background-color: rgb(121, 26, 121);
+  background-color: #791a79;
   color: #ffffff;
 }/*# sourceMappingURL=styles.css.map */
