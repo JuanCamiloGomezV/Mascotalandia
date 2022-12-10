@@ -1,29 +1,32 @@
 import { guardarLocalStorage } from './storage.js'
 export let productosCarrito = [];
+let padre = document.getElementById("contenedor-productos");
+let loader = document.getElementById("loader");
+loader.innerHTML = `<img class="loader w-50" src="../img/Spin-1s-200px.svg" alt="Cargando...">`
 export const agregarProductosHTML = (producto) => {
-    setTimeout(() => {}, 1500);
-    const { imagen, nombre, descripcion, precio, id } = producto;
-    let padre = document.getElementById("contenedor-productos");
-    let hijo = document.createElement("div");
-    hijo.innerHTML = `<div class="card m-2 producto-size">
-        <div class="w-100 d-flex justify-content-center">
-            <img src="${imagen}" class="card-img-top img-producto" alt="...">
-        </div>
-        <div class="card-body d-flex align-items-center flex-column mb-0">
-        <h5 class="card-text text-center fw-bold m-0">${nombre}</h5>
-        <p class="card-text mb-0">${descripcion}</p>
-        <h5 class="card-title text-center text-violet fw-bold mt-1">$${precio}</h5>
-        <div class="d-flex justify-content-between mx-2">
-            <div class="d-flex justify-content-start">
-                <button class="btn btn-violet bg-violet rounded-0" id="btn-disminuir${id}">-</button>
-                <input type="number" class="text-center bg-white text-dark border border-dark producto-cantidad" id="producto-cantidad${id}" disabled value="${producto.cantidad}">
-                <button class="btn btn-violet bg-violet rounded-0 me-2" id="btn-aumentar${id}">+</button>
+
+    setTimeout(() => {
+        const { imagen, nombre, descripcion, precio, id } = producto;
+        loader.innerHTML = ``;
+        padre.innerHTML += `<div class="card m-2 producto-size">
+            <div class="w-100 d-flex justify-content-center">
+                <img src="${imagen}" class="card-img-top img-producto" alt="...">
             </div>
-            <button href="#" class="btn btn-violet bg-violet w-75" id="btn-comprar${id}">Comprar</button>
-        </div>
-        </div>
-        </div>`
-    padre.appendChild(hijo);
+            <div class="card-body d-flex align-items-center flex-column mb-0">
+            <h5 class="card-text text-center fw-bold m-0">${nombre}</h5>
+            <p class="card-text mb-0">${descripcion}</p>
+            <h5 class="card-title text-center text-violet fw-bold mt-1">$${precio}</h5>
+            <div class="d-flex justify-content-between mx-2">
+                <div class="d-flex justify-content-start">
+                    <button class="btn btn-violet bg-violet rounded-0" id="btn-disminuir${id}">-</button>
+                    <input type="number" class="text-center bg-white text-dark border border-dark producto-cantidad" id="producto-cantidad${id}" disabled value="${producto.cantidad}">
+                    <button class="btn btn-violet bg-violet rounded-0 me-2" id="btn-aumentar${id}">+</button>
+                </div>
+                <button href="#" class="btn btn-violet bg-violet w-75" id="btn-comprar${id}">Comprar</button>
+            </div>
+            </div>
+            </div>`
+    }, "1500")
 }
 
 export const contador = (producto) => {
