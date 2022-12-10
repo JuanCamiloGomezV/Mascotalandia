@@ -2,13 +2,15 @@ import { guardarLocalStorage } from './storage.js'
 export let productosCarrito = [];
 let padre = document.getElementById("contenedor-productos");
 let loader = document.getElementById("loader");
-loader.innerHTML = `<img class="loader w-50" src="../img/Spin-1s-200px.svg" alt="Cargando...">`
+export const agregarLoader = () => {
+    loader.innerHTML = `<img class="loader w-50" src="../img/Spin-1s-200px.svg" alt="Cargando...">`
+}
+
 export const agregarProductosHTML = (producto) => {
 
-    setTimeout(() => {
-        const { imagen, nombre, descripcion, precio, id } = producto;
-        loader.innerHTML = ``;
-        padre.innerHTML += `<div class="card m-2 producto-size">
+    const { imagen, nombre, descripcion, precio, id } = producto;
+    loader.innerHTML = ``;
+    padre.innerHTML += `<div class="card m-2 producto-size">
             <div class="w-100 d-flex justify-content-center">
                 <img src="${imagen}" class="card-img-top img-producto" alt="...">
             </div>
@@ -26,19 +28,20 @@ export const agregarProductosHTML = (producto) => {
             </div>
             </div>
             </div>`
-    }, "1500")
 }
 
+
 export const contador = (producto) => {
+
     let cantidad = document.getElementById(`producto-cantidad${producto.id}`);
     let buttonAumentar = document.getElementById(`btn-aumentar${producto.id}`);
     let buttonDisminuir = document.getElementById(`btn-disminuir${producto.id}`);
 
     if (buttonAumentar) {
-        buttonAumentar.addEventListener("click", () => { aumentar() })
+        buttonAumentar.addEventListener("click", () => { aumentar(); })
     }
     if (buttonDisminuir) {
-        buttonDisminuir.addEventListener("click", () => { disminuir() })
+        buttonDisminuir.addEventListener("click", () => { disminuir(); })
     }
     const aumentar = () => {
         cantidad.value++;
@@ -170,6 +173,6 @@ const cantidadDelCarrito = () => {
     for (const productoC of productosCarrito) {
         suma = suma + parseInt(productoC.cantidad);
     }
-    setTimeout(() => { cantidad.innerText = `${suma}` }, 500);
+    cantidad.innerText = `${suma}`;
 
 }

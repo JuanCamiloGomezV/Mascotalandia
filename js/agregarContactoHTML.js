@@ -56,7 +56,8 @@ const eliminarProductosFetching = async() => {
         console.log(e);
     }
 }
-
-carritoVacio();
-cantidadProductosFetching();
-eliminarProductosFetching();
+setTimeout(() => {
+    carritoVacio();
+    cantidadProductosFetching();
+    eliminarProductosFetching();
+}, 1500)

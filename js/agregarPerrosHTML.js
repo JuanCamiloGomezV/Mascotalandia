@@ -1,7 +1,7 @@
 import { getProductos } from './productos.js';
-import { agregarProductosHTML, contador, agregarCarritoHTML, carritoVacio, arreglarCantidad, eliminarProducto } from './funciones.js';
+import { agregarLoader, agregarProductosHTML, contador, agregarCarritoHTML, carritoVacio, arreglarCantidad, eliminarProducto } from './funciones.js';
 import { obtenerLocalStorage } from './storage.js'
-
+agregarLoader();
 document.addEventListener('DOMContentLoaded', () => {
     localStorage.length > 0 ? obtenerLocalStorage() : false;
 })
@@ -103,9 +103,10 @@ const eliminarProductosFetching = async() => {
         console.log(e);
     }
 }
-
-carritoVacio();
-agregarProductosFetching();
-cantidadProductosFetching();
-contadorProductosFetching();
-eliminarProductosFetching();
+setTimeout(() => {
+    carritoVacio();
+    agregarProductosFetching();
+    cantidadProductosFetching();
+    contadorProductosFetching();
+    eliminarProductosFetching();
+}, 1500)
